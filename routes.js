@@ -1,16 +1,20 @@
 module.exports = [
   {
-    prefix: '/api',
+    // The base url for the service
+    // E.g. http://localhost:3000/api/v2
     pin: 'role:api,path:users',
+    prefix: '/api/v2',
     map: {
-      users: true
+      // Map the action to the users route
+      // E.g. http://localhost:3000/api/v2/users
+      users: { GET: false }
     }
   },
   {
-    prefix: '/api',
     pin: 'role:api,path:index',
+    prefix: '/api/v1',
     map: {
-      index: true
+      '/': true
     }
   }
 ] 

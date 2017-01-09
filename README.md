@@ -1,2 +1,7 @@
-# seneca-boilerplate
-A working seneca-boilerplate
+# Seneca Boilerplate
+
+A working Seneca Microservice example with Express.
+
+
+# TODO:
+- Add a more valid example
